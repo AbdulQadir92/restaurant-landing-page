@@ -7,7 +7,6 @@ export const LightTheme = {
         lightText: '#fff',
         lightTextSec: 'rgba(200, 200, 200)',
 
-        // darkBg: '#000',
         darkBg: 'rgb(1, 4, 23)',
         lightBg: '#fff',
 

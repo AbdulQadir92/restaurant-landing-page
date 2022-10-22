@@ -12,8 +12,10 @@ const GlobalStyles = createGlobalStyle`
         --heading-lg: 40px;
         --heading-md: 35px;
         --heading-sm: 30px;
+        --card-heading: 18px;
 
-        --heading-mb: 30px;
+        --heading-mb-lg: 30px;
+        --heading-mb-md: 25px;
     }
 
     // Components
@@ -60,6 +62,7 @@ const GlobalStyles = createGlobalStyle`
             --heading-lg: 35px;
             --heading-md: 30px;
             --heading-sm: 25px;
+            --card-heading: 16px;
 
             --heading-mb: 25px;
         }
@@ -67,6 +70,14 @@ const GlobalStyles = createGlobalStyle`
          // Components
          :root {
             --home-heading-font: 35px;
+        }
+
+        #app > section {
+            padding: 50px 10%;
+        }
+
+        nav {
+            padding: 0 10%;
         }
     }
 
@@ -95,6 +106,14 @@ const GlobalStyles = createGlobalStyle`
          // Components
         :root {
             --home-heading-font: 25px;
+        }
+
+        #app > section {
+            padding: 50px 5%;
+        }
+
+        nav {
+            padding: 0 5%;
         }
     }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const StyledHome = styled.section`
+export const HomeSection = styled.section`
     position: relative;
 
     background-image: url('http://localhost:3000/images/home/home.jpg');

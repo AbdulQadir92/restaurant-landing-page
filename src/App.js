@@ -1,6 +1,7 @@
 import { LightTheme } from "./themes/LightTheme";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Menu from "./components/Menu";
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from "./styles/Global";
@@ -13,6 +14,7 @@ function App() {
         <GlobalStyles />
         <Navbar />
         <Home />
+        <Menu />
       </div>
     </ThemeProvider>
   );

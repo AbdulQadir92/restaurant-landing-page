@@ -1,9 +1,9 @@
-import { StyledHome, HomeShadow, Content } from "../styles/Home.styled";
+import { HomeSection, HomeShadow, Content } from "../styles/Home.styled";
 
 
 const Home = () => {
     return (
-        <StyledHome>
+        <HomeSection>
             <HomeShadow>
                 <Content>
                     <h1>Welcome to Restaurant!</h1>
@@ -12,7 +12,7 @@ const Home = () => {
                     </p>
                 </Content>
             </HomeShadow>
-        </StyledHome>
+        </HomeSection>
     )
 }
 

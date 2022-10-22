@@ -89,7 +89,7 @@ export const NavUl = styled.ul`
         flex-direction: column;
         justify-content: center;
 
-        width: 90%;
+        width: 80%;
         height: 0;
         background-color: ${({ theme }) => theme.colors.darkBg};
     
@@ -102,5 +102,9 @@ export const NavUl = styled.ul`
             padding-right: 0;
             margin-bottom: 15px;
         }
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 90%;
     }
 `
