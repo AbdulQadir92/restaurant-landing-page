@@ -1,4 +1,5 @@
 import { LightTheme } from "./themes/LightTheme";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 
 import { ThemeProvider } from 'styled-components';
@@ -10,6 +11,7 @@ function App() {
     <ThemeProvider theme={LightTheme}>
       <div id="app">
         <GlobalStyles />
+        <Navbar />
         <Home />
       </div>
     </ThemeProvider>

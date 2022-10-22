@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyles = createGlobalStyle`
+
     // Global
     :root {
         --font-lg: 16px;
@@ -31,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: Verdana, Geneva, Tahoma, sans-sefif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -42,8 +43,14 @@ const GlobalStyles = createGlobalStyle`
         padding: 50px 5%;
     }
 
+    nav {
+        padding: 0 5%;
+    }
+
+
     /* Media Queries */
     @media (max-width: 992px) {
+
         // Global
         :root {
             --font-lg: 15px;
@@ -63,7 +70,8 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
+
         // Global
         :root {
             --font-lg: 14px;
@@ -77,6 +85,13 @@ const GlobalStyles = createGlobalStyle`
             --heading-mb: 20px;
         }
 
+        // Components
+        :root {
+            --home-heading-font: 30px;
+            }
+    }
+
+    @media (max-width: 576px) {
          // Components
         :root {
             --home-heading-font: 25px;

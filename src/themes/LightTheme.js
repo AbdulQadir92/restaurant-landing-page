@@ -7,10 +7,15 @@ export const LightTheme = {
         textLight: '#fff',
         textLightSec: 'rgba(200, 200, 200)',
 
-        mainBg: '#000',
+        // darkBg: '#000',
+        darkBg: 'rgb(1, 4, 23)',
         lightBg: '#fff',
 
         mainBorder: 'rgba(238, 76, 43, 0.25)',
+    },
+
+    nav: {
+        bg: 'rgba(1, 5, 31, .3)',
     },
 
     home: {

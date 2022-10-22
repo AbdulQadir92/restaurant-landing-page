@@ -42,7 +42,7 @@ export const HomeShadow = styled.div`
     height: 100vh;
     padding: inherit;
 
-    
+
     @media screen and (max-width: 992px) {
         & {
             height: 60vh;
@@ -70,7 +70,7 @@ export const Content = styled.div`
     
     h1 {
         font-size: var(--home-heading-font);
-        margin-bottom: var(--heading-mb);
+        margin-bottom: 15px;
     } 
 
     p {
