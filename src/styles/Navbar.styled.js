@@ -10,7 +10,8 @@ export const StyledNavbar = styled.nav`
     justify-content: space-between;
     align-items: center;
 
-    background-color: ${({ theme }) => theme.nav.bg};
+    /* background-color: ${({ theme }) => theme.nav.bg}; */
+    background-color: transparent;
     width: 100%;
     height: 60px;
 
@@ -39,7 +40,7 @@ export const BrandMenu = styled.div`
 export const Brand = styled.div`
     a {
         text-decoration: none;
-        color: ${({ theme }) => theme.colors.textLight};
+        color: ${({ theme }) => theme.colors.lightText};
         font-weight: bold;
         font-size: 25px;
     }
@@ -73,7 +74,7 @@ export const NavUl = styled.ul`
 
     a {
         text-decoration: none;
-        color: ${({ theme }) => theme.colors.textLight};
+        color: ${({ theme }) => theme.colors.lightText};
         font-size: 14px;
     }    
 
