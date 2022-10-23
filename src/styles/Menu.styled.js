@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const MenuSection = styled.section`
     background-color: ${({ theme }) => theme.colors.lightBg};
 
-    h1 {
+    & > h1 {
         color: ${({ theme }) => theme.colors.mainColor};
         font-size: var(--heading-md);
         margin-bottom: var(--heading-mb-lg);
@@ -43,8 +43,10 @@ export const CardBody = styled.div`
     div {
         display: flex;
         justify-content: space-between;
+    }
 
-        font-size: var(--card-heading);
+    h2 {
+        font-size: var(--heading-sm);
     }
 
     p {

@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
 
     // Components
     :root {
-        --home-heading-font: 40px;
+        
     }
 
     * {
@@ -69,7 +69,7 @@ const GlobalStyles = createGlobalStyle`
 
          // Components
          :root {
-            --home-heading-font: 35px;
+            
         }
 
         #app > section {
@@ -91,15 +91,15 @@ const GlobalStyles = createGlobalStyle`
 
             --heading-lg: 30px;
             --heading-md: 25px;
-            --heading-sm: 20px;
+            --heading-sm: 22px;
 
             --heading-mb: 20px;
         }
 
         // Components
         :root {
-            --home-heading-font: 30px;
-            }
+            
+        }
     }
 
     @media (max-width: 576px) {

@@ -69,7 +69,7 @@ export const Content = styled.div`
 
     
     h1 {
-        font-size: var(--home-heading-font);
+        font-size: var(--heading-lg);
         margin-bottom: 15px;
     } 
 
