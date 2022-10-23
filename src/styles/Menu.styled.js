@@ -26,7 +26,9 @@ export const CardContainer = styled.div`
 export const Card = styled.div`
     display: flex;
     justify-content: space-between;
+
     border: 1px solid ${({ theme }) => theme.colors.mainBorder};
+    background-color: ${({ theme }) => theme.colors.lightBg};
 
     @media screen and (max-width: 576px) {
         & {

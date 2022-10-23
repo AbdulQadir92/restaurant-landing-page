@@ -10,8 +10,8 @@ export const StyledNavbar = styled.nav`
     justify-content: space-between;
     align-items: center;
 
-    /* background-color: ${({ theme }) => theme.nav.bg}; */
-    background-color: transparent;
+    background-color: ${({ theme }) => theme.nav.bg};
+    /* background-color: transparent; */
     width: 100%;
     height: 60px;
 

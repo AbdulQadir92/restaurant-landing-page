@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
         --heading-lg: 40px;
         --heading-md: 35px;
         --heading-sm: 30px;
+        --heading-xsm: 25px;
         --card-heading: 18px;
 
         --heading-mb-lg: 30px;
@@ -62,6 +63,7 @@ const GlobalStyles = createGlobalStyle`
             --heading-lg: 35px;
             --heading-md: 30px;
             --heading-sm: 25px;
+            --heading-xsm: 22px;
             --card-heading: 16px;
 
             --heading-mb: 25px;
@@ -92,6 +94,7 @@ const GlobalStyles = createGlobalStyle`
             --heading-lg: 30px;
             --heading-md: 25px;
             --heading-sm: 22px;
+            --heading-xsm: 19px;
 
             --heading-mb: 20px;
         }
