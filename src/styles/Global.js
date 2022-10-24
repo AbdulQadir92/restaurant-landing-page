@@ -43,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     #app > section {
-        padding: 50px 5%;
+        padding: 55px 5%;
     }
 
     nav {

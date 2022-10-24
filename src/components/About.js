@@ -3,7 +3,7 @@ import { AboutSection, LeftColumn, RightComlumn } from "../styles/About.styled"
 
 const About = () => {
     return (
-        <AboutSection>
+        <AboutSection id="about">
             <h1>About Us</h1>
             <div>
                 <LeftColumn>

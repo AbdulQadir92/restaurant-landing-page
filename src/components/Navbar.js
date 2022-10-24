@@ -1,27 +1,49 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 import { StyledNavbar, BrandMenu, Brand, MenuIcon, NavUl } from '../styles/Navbar.styled';
 
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
-const Navbar = () => {
+const Navbar = ({ theme }) => {
     const navUl = useRef();
 
-    const makeActive = (e) => {
-        const navlinks = document.querySelectorAll('[data-navlink]');
+    useEffect(() => {
+        makeLinkActive();
+    }, [])
 
-        navlinks.forEach(navLink => {
-            if (navLink.classList.contains('active')) {
-                navLink.classList.remove('active')
-            }
-        })
+    const makeLinkActive = () => {
+        const sections = document.querySelectorAll('section[id]');
 
-        e.target.classList.add('active')
+        window.onscroll = () => {
+            const scrollY = window.scrollY;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 50;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.id;
+
+                if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+                    const activeLi = document.querySelector(`li a[href*=${sectionId}]`);
+                    activeLi.classList.add('active');
+                    changeNavBg(section.id);
+                } else {
+                    const li = document.querySelector(`li a[href*=${sectionId}]`);
+                    li.classList.remove('active')
+                }
+            })
+        }
+    }
+
+    const changeNavBg = (sectionId) => {
+        const navbar = document.querySelector('#navbar');
+        if (sectionId === 'home') {
+            navbar.style.backgroundColor = 'transparent';
+        } else {
+            navbar.style.backgroundColor = theme.nav.bg;
+        }
     }
 
     const toggleNavbar = () => {
-
         const toggleLisDisplay = (val) => {
             let intTime;
             if (val === 'block') {
@@ -49,7 +71,7 @@ const Navbar = () => {
 
 
     return (
-        <StyledNavbar>
+        <StyledNavbar id="navbar">
             <BrandMenu>
                 <Brand>
                     <h2>
@@ -61,23 +83,26 @@ const Navbar = () => {
                 </MenuIcon>
             </BrandMenu>
             <NavUl ref={navUl}>
+                <span>
+                    <FaTimes onClick={toggleNavbar} />
+                </span>
                 <li>
-                    <a href="#" className="active" onClick={makeActive} data-navlink>Home</a>
+                    <a href="#home" className="active" onClick={toggleNavbar}>Home</a>
                 </li>
                 <li>
-                    <a href="#" onClick={makeActive} data-navlink>Menu</a>
+                    <a href="#menu" onClick={toggleNavbar}>Menu</a>
                 </li>
                 <li>
-                    <a href="#" onClick={makeActive} data-navlink>About</a>
+                    <a href="#about" onClick={toggleNavbar}>About</a>
                 </li>
                 <li>
-                    <a href="#" onClick={makeActive} data-navlink>Dishes</a>
+                    <a href="#dishes" onClick={toggleNavbar}>Dishes</a>
                 </li>
                 <li>
-                    <a href="#" onClick={makeActive} data-navlink>Services</a>
+                    <a href="#services" onClick={toggleNavbar}>Services</a>
                 </li>
                 <li>
-                    <a href="#" onClick={makeActive} data-navlink>Contact</a>
+                    <a href="#contact" onClick={toggleNavbar}>Contact</a>
                 </li>
             </NavUl>
         </StyledNavbar>

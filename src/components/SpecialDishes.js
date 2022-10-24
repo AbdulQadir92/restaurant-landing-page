@@ -19,7 +19,7 @@ const SpecialDishes = () => {
     }, [])
 
     return (
-        <SpecialDishesSection>
+        <SpecialDishesSection id="dishes">
             <h1>Our Special Dishes</h1>
             <CardContainer>
                 {data && data.map((item, index) => (

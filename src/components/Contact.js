@@ -6,7 +6,7 @@ import { ContactSection } from "../styles/Contact.styled";
 
 const Contact = () => {
     return (
-        <ContactSection>
+        <ContactSection id="contact">
             <h1>Contact Us</h1>
             <div>
                 <MapContainer />

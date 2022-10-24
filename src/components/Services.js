@@ -8,7 +8,7 @@ const Services = () => {
     const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit Dolores consequuntur voluptatem odio sapiente voluptatibus blanditiis';
 
     return (
-        <ServicesSection>
+        <ServicesSection id="services">
             <h1>Our Services</h1>
             <CardContainer>
                 <Card>

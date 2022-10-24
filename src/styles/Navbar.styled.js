@@ -10,8 +10,7 @@ export const StyledNavbar = styled.nav`
     justify-content: space-between;
     align-items: center;
 
-    background-color: ${({ theme }) => theme.nav.bg};
-    /* background-color: transparent; */
+    background-color: transparent;
     width: 100%;
     height: 60px;
 
@@ -62,11 +61,24 @@ export const MenuIcon = styled.div`
 `
 
 export const NavUl = styled.ul`
+    position: relative;
+
     display: flex;
     align-items: center;
 
     list-style-type: none;
     transition: 0.3s;
+
+    & > span {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+
+        color: ${({ theme }) => theme.colors.mainColor};
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+    }
 
     li:not(:last-child) {
         padding-right: 25px;
@@ -93,7 +105,6 @@ export const NavUl = styled.ul`
         width: 80%;
         height: 0;
         background-color: ${({ theme }) => theme.colors.darkBg};
-    
 
         li {
             display: none;

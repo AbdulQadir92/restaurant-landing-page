@@ -23,7 +23,7 @@ const Menu = () => {
     }, [])
 
     return (
-        <MenuSection>
+        <MenuSection id="menu">
             <h1>Menu</h1>
             <CardContainer>
                 {data && data.map((item, index) => (

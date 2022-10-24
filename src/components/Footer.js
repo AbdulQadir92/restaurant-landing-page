@@ -25,22 +25,22 @@ const Footer = () => {
                     <h3>Quick Links</h3>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#">Menu</a>
+                            <a href="#menu">Menu</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#">Dishes</a>
+                            <a href="#dishes">Dishes</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </QuickLinks>

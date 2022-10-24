@@ -3,7 +3,7 @@ import { HomeSection, HomeShadow, Content } from "../styles/Home.styled";
 
 const Home = () => {
     return (
-        <HomeSection>
+        <HomeSection id="home">
             <HomeShadow>
                 <Content>
                     <h1>Welcome to Restaurant!</h1>

@@ -18,7 +18,7 @@ function App() {
     <ThemeProvider theme={LightTheme}>
       <div id="app">
         <GlobalStyles />
-        <Navbar />
+        <Navbar theme={LightTheme} />
         <Home />
         <Menu />
         <About />
