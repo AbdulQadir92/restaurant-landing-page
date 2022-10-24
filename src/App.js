@@ -5,6 +5,8 @@ import Menu from "./components/Menu";
 import About from "./components/About";
 import SpecialDishes from "./components/SpecialDishes";
 import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Info from "./components/Info";
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from "./styles/Global";
@@ -21,6 +23,8 @@ function App() {
         <About />
         <SpecialDishes />
         <Services />
+        <Contact />
+        <Info />
       </div>
     </ThemeProvider>
   );

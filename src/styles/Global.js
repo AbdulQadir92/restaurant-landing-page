@@ -50,8 +50,62 @@ const GlobalStyles = createGlobalStyle`
         padding: 0 5%;
     }
 
+    /* UI Elements */
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid ${({ theme }) => theme.colors.lightTextSec};
+        background-color: ${({ theme }) => theme.colors.lightBg};
+        color: ${({ theme }) => theme.colors.darkText};
+        font-size: var(--font-md);
+    }
+
+    input:focus, textarea:focus {
+        border: 1px solid transparent;
+        outline: 1px solid ${({ theme }) => theme.colors.mainColor};
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(238, 76, 43, 0.6);
+    }
+
+    ::placeholder {
+        font-size: var(--font-sm);
+    }
+
+    button, input[type=button] {
+        background-color: ${({ theme }) => theme.colors.mainColor};
+        color: ${({ theme }) => theme.colors.lightText};
+        border: 2px solid ${({ theme }) => theme.colors.mainColor};
+        padding: 10px;
+        font-size: var(--font-md);
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    button:hover, input[type=button]:hover {
+        background-color: ${({ theme }) => theme.colors.lightBg};
+        color: ${({ theme }) => theme.colors.darkText};
+    }
 
     /* Media Queries */
+    @media (min-width: 1400px) {
+        #app > section {
+            padding: 50px 10%;
+        }
+
+        nav {
+            padding: 0 10%;
+        }
+    }
+
+    @media (min-width: 1700px) {
+        #app > section {
+            padding: 50px 15%;
+        }
+
+        nav {
+            padding: 0 15%;
+        }
+    }
+
     @media (max-width: 992px) {
 
         // Global
@@ -81,6 +135,14 @@ const GlobalStyles = createGlobalStyle`
         nav {
             padding: 0 10%;
         }
+
+        input, textarea {
+            padding: 7px;
+        }
+
+        button, input[type=button] {
+            padding: 7px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -102,6 +164,14 @@ const GlobalStyles = createGlobalStyle`
         // Components
         :root {
             
+        }
+
+        input, textarea {
+            padding: 6px;
+        }
+
+        button, input[type=button] {
+            padding: 6px;
         }
     }
 
