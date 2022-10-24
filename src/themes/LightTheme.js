@@ -19,6 +19,11 @@ export const LightTheme = {
 
     home: {
         shadow: 'rgba(0, 0, 0, 0.3)',
+    },
+
+    footer: {
+        bg: 'rgb(1, 5, 31)',
+        bottomBg: 'rgb(1, 3, 18)'
     }
 }
 

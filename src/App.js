@@ -7,6 +7,7 @@ import SpecialDishes from "./components/SpecialDishes";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Info from "./components/Info";
+import Footer from "./components/Footer";
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from "./styles/Global";
@@ -25,6 +26,7 @@ function App() {
         <Services />
         <Contact />
         <Info />
+        <Footer />
       </div>
     </ThemeProvider>
   );

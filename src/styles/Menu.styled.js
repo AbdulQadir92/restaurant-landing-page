@@ -48,7 +48,7 @@ export const CardBody = styled.div`
     }
 
     h2 {
-        font-size: var(--heading-sm);
+        font-size: var(--heading-xsm);
     }
 
     p {

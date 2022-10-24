@@ -85,6 +85,7 @@ export const NavUl = styled.ul`
     @media screen and (max-width: 768px) {
         position: absolute;
         top: 60px;
+        z-index: 10;
 
         flex-direction: column;
         justify-content: center;

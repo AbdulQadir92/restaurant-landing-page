@@ -8,8 +8,6 @@ export const InfoSection = styled.section`
     border-top: 1px solid ${({ theme }) => theme.colors.mainBorder};
     border-bottom: 1px solid ${({ theme }) => theme.colors.mainBorder};
 
-    margin-bottom: 30px;
-
     & > div {
         display: flex;
         flex-direction: column;
