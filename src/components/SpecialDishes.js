@@ -9,9 +9,9 @@ const SpecialDishes = () => {
     const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit Fugiat ipsa';
 
     const items = [
-        { name: 'Fried Chicken', price: 200, description: description, image: 'fried_chicken.jpg' },
-        { name: 'Fruit Salad', price: 49, description: description, image: 'fruit_salad.jpg' },
-        { name: 'Chicken Sandwich', price: 80, description: description, image: 'chicken_sandwich.jpg' }
+        { name: 'Fried Chicken', price: 200, description: description, image: 'fried_chicken-min.jpg' },
+        { name: 'Fruit Salad', price: 49, description: description, image: 'fruit_salad-min.jpg' },
+        { name: 'Chicken Sandwich', price: 80, description: description, image: 'chicken_sandwich-min.jpg' }
     ]
 
     useEffect(() => {

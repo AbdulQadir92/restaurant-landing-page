@@ -8,14 +8,14 @@ const Menu = () => {
 
     const description = 'Lorem ipsum dolor sit amet consectetur adipisicing elit Fugiat ipsa sit amet consectetur adipisicing elit.';
     const items = [
-        { name: 'Fried Chicken', price: 200, description: description, image: 'fried_chicken.jpg' },
-        { name: 'Grilled Steak', price: 233, description: description, image: 'grilled_steak.jpg' },
-        { name: 'Chicken Burger', price: 99, description: description, image: 'chicken_burger.jpg' },
-        { name: 'Vegetables', price: 144, description: description, image: 'vegetables.jpg' },
-        { name: 'Fish', price: 50, description: description, image: 'fish.jpg' },
-        { name: 'Strawberry Popsicles', price: 25, description: description, image: 'strawberry_popsicles.jpg' },
-        { name: 'Strawberry Cake', price: 49, description: description, image: 'strawberry_cake.jpg' },
-        { name: 'Vegetable Burger', price: 30, description: description, image: 'burger.jpg' }
+        { name: 'Fried Chicken', price: 200, description: description, image: 'fried_chicken-min.jpg' },
+        { name: 'Grilled Steak', price: 233, description: description, image: 'grilled_steak-min.jpg' },
+        { name: 'Chicken Burger', price: 99, description: description, image: 'chicken_burger-min.jpg' },
+        { name: 'Vegetables', price: 144, description: description, image: 'vegetables-min.jpg' },
+        { name: 'Fish', price: 50, description: description, image: 'fish-min.jpg' },
+        { name: 'Strawberry Popsicles', price: 25, description: description, image: 'strawberry_popsicles-min.jpg' },
+        { name: 'Strawberry Cake', price: 49, description: description, image: 'strawberry_cake-min.jpg' },
+        { name: 'Vegetable Burger', price: 30, description: description, image: 'burger-min.jpg' }
     ]
 
     useEffect(() => {
