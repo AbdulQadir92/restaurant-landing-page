@@ -123,11 +123,6 @@ const GlobalStyles = createGlobalStyle`
             --heading-mb: 25px;
         }
 
-         // Components
-         :root {
-            
-        }
-
         #app > section {
             padding: 50px 10%;
         }
@@ -161,11 +156,6 @@ const GlobalStyles = createGlobalStyle`
             --heading-mb: 20px;
         }
 
-        // Components
-        :root {
-            
-        }
-
         input, textarea {
             padding: 6px;
         }
@@ -176,9 +166,9 @@ const GlobalStyles = createGlobalStyle`
     }
 
     @media (max-width: 576px) {
-         // Components
+        // Global
         :root {
-            --home-heading-font: 25px;
+            --heading-lg: 25px;
         }
 
         #app > section {
