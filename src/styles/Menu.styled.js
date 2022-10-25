@@ -49,6 +49,7 @@ export const CardBody = styled.div`
 
     h2 {
         font-size: var(--heading-xsm);
+        color: ${({ theme }) => theme.colors.darkText};
     }
 
     p {

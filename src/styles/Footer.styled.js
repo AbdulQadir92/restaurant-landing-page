@@ -35,7 +35,7 @@ export const AboutUs = styled.div`
     align-items: center;
 
     & > p {
-        color: ${({ theme }) => theme.colors.lightTextSec};
+        color: ${({ theme }) => theme.footer.textSec};
         font-size: var(--font-sm);
         line-height: 1.6;
     }
@@ -57,7 +57,7 @@ export const OpeningHours = styled.div`
     }
 
     & li {
-        color: ${({ theme }) => theme.colors.lightTextSec};
+        color: ${({ theme }) => theme.footer.textSec};
         font-size: var(--font-sm);
         margin-bottom: 10px;
     }
@@ -76,7 +76,7 @@ export const QuickLinks = styled.div`
     }
 
     & a {
-        color: ${({ theme }) => theme.colors.lightTextSec};
+        color: ${({ theme }) => theme.footer.textSec};
         font-size: var(--font-sm);
         text-decoration: none;
     }
@@ -84,7 +84,7 @@ export const QuickLinks = styled.div`
 
 export const FooterBottom = styled.p`
     background-color: ${({ theme }) => theme.footer.bottomBg} !important;
-    color: ${({ theme }) => theme.colors.lightTextSec};
+    color: ${({ theme }) => theme.footer.textSec};
     font-size: var(--font-sm);
     padding: 30px;
     text-align: center;

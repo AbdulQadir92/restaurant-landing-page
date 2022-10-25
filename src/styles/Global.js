@@ -72,7 +72,7 @@ const GlobalStyles = createGlobalStyle`
 
     button, input[type=button] {
         background-color: ${({ theme }) => theme.colors.mainColor};
-        color: ${({ theme }) => theme.colors.lightText};
+        color: ${({ theme }) => theme.button.lightText};
         border: 2px solid ${({ theme }) => theme.colors.mainColor};
         padding: 10px;
         font-size: var(--font-md);
@@ -82,7 +82,7 @@ const GlobalStyles = createGlobalStyle`
 
     button:hover, input[type=button]:hover {
         background-color: ${({ theme }) => theme.colors.lightBg};
-        color: ${({ theme }) => theme.colors.darkText};
+        color: ${({ theme }) => theme.button.darkText};
     }
 
     /* Media Queries */

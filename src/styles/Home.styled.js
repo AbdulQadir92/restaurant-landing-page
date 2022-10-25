@@ -64,7 +64,7 @@ export const HomeShadow = styled.div`
 
 export const Content = styled.div`
     width: 100%;
-    color: ${({ theme }) => theme.colors.lightText};
+    color: ${({ theme }) => theme.home.lightText};
     text-align: center;
 
     

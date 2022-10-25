@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { LightTheme } from "./themes/LightTheme";
+
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
@@ -14,11 +16,13 @@ import GlobalStyles from "./styles/Global";
 
 
 function App() {
+  const [theme, SetTheme] = useState(JSON.parse(localStorage.getItem('theme')));
+
   return (
-    <ThemeProvider theme={LightTheme}>
+    <ThemeProvider theme={theme ? theme : LightTheme}>
       <div id="app">
         <GlobalStyles />
-        <Navbar theme={LightTheme} />
+        <Navbar setTheme={SetTheme} />
         <Home />
         <Menu />
         <About />

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import { MenuSection, CardContainer, Card, CardBody, Image } from "../styles/Menu.styled";
 
 

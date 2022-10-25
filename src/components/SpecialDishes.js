@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import { SpecialDishesSection, CardContainer, Card, CardBody, ImageDiv } from "../styles/SpecialDishes.styled";
 
 

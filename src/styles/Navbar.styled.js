@@ -39,7 +39,7 @@ export const BrandMenu = styled.div`
 export const Brand = styled.div`
     a {
         text-decoration: none;
-        color: ${({ theme }) => theme.colors.lightText};
+        color: ${({ theme }) => theme.nav.lightText};
         font-weight: bold;
         font-size: 25px;
     }
@@ -86,7 +86,7 @@ export const NavUl = styled.ul`
 
     a {
         text-decoration: none;
-        color: ${({ theme }) => theme.colors.lightText};
+        color: ${({ theme }) => theme.nav.lightText};
         font-size: 14px;
     }    
 
@@ -114,9 +114,41 @@ export const NavUl = styled.ul`
             padding-right: 0;
             margin-bottom: 15px;
         }
+
+        a {
+            color: ${({ theme }) => theme.colors.lightText};
+        } 
     }
 
     @media screen and (max-width: 576px) {
         width: 90%;
+    }
+`
+
+export const ThemeIcons = styled.span`
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    & > * {
+        box-sizing: content-box;
+        font-size: 15px;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    & > #moon {
+        background-color: ${(({ theme }) => theme.colors.lightBg)};
+        color: ${(({ theme }) => theme.colors.darkText)};
+    }
+    
+    & > #sun {
+        background-color: ${(({ theme }) => theme.colors.darkBg)};
+        color: ${(({ theme }) => theme.colors.lightText)};
+    }
+
+    @media screen and (max-width: 768px) {
+        right: 18%;
     }
 `

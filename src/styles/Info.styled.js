@@ -5,6 +5,7 @@ export const InfoSection = styled.section`
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 
+    background-color: ${({ theme }) => theme.colors.lightBg};
     border-top: 1px solid ${({ theme }) => theme.colors.mainBorder};
     border-bottom: 1px solid ${({ theme }) => theme.colors.mainBorder};
 

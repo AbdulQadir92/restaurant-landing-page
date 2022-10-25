@@ -1,27 +1,27 @@
-export const LightTheme = {
-    light: true,
+export const DarkTheme = {
+    dark: true,
 
     colors: {
         mainColor: 'rgb(238, 76, 43)',
 
-        darkText: '#000',
-        darkTextSec: 'rgba(50, 50, 50, 0.8)',
-        lightText: '#fff',
-        lightTextSec: 'rgb(200, 200, 200)',
+        darkText: '#fff',
+        darkTextSec: 'rgb(220, 220, 220)',
+        lightText: '#000',
+        lightTextSec: 'rgba(50, 50, 50, 0.8)',
 
-        darkBg: 'rgb(1, 4, 23)',
-        lightBg: '#fff',
+        darkBg: '#fff',
+        lightBg: 'rgb(1, 4, 23)',
 
         mainBorder: 'rgba(238, 76, 43, 0.25)',
     },
 
     nav: {
-        bg: 'rgba(1, 5, 31, .3)',
+        bg: 'rgba(202, 204, 222, .3)',
         lightText: '#fff',
     },
 
     home: {
-        shadow: 'rgba(0, 0, 0, 0.3)',
+        shadow: 'rgba(0, 0, 0, 0.4)',
         lightText: '#fff',
     },
 
@@ -33,7 +33,6 @@ export const LightTheme = {
 
     button: {
         lightText: '#fff',
-        darkText: '#000',
+        darkText: '#fff',
     }
 }
-
