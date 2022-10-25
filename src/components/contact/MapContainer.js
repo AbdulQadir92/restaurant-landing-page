@@ -25,11 +25,6 @@ export class MapContainer extends React.Component {
     }
 }
 
-const mapContainerStyle = {
-    position: 'relative',
-    height: '400px'
-}
-
 export default GoogleApiWrapper({
     apiKey: ('AIzaSyDkmmNKgMKQACgKR_4rL38wWvGsajiTNMk')
 })(MapContainer)
