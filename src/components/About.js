@@ -1,5 +1,5 @@
 import { AboutSection, LeftColumn, RightComlumn } from "../styles/About.styled"
-
+import restaurant from '../images/about/restaurant-min.jpg';
 
 const About = () => {
     return (
@@ -7,7 +7,7 @@ const About = () => {
             <h1>About Us</h1>
             <div>
                 <LeftColumn>
-                    <img src="http://localhost:3000/images/about/restaurant-min.jpg" alt="About" width="400" height="350" />
+                    <img src={restaurant} alt="About" width="400" height="350" />
                 </LeftColumn>
                 <RightComlumn>
                     <h2>Our Restaurant</h2>

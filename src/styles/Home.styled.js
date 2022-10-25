@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 
-
 export const HomeSection = styled.section`
     position: relative;
 
-    background-image: url('http://localhost:3000/images/home/home-min.jpg');
-    background-size: 100% 108%;
-    background-position: bottom;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
+
+    & > img {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+    }
 
 
     @media screen and (max-width: 992px) {
