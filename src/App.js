@@ -16,9 +16,7 @@ import GlobalStyles from "./styles/Global";
 
 
 function App() {
-  // const [theme, SetTheme] = useState(JSON.parse(localStorage.getItem('theme')));
-  const [theme, SetTheme] = useState(LightTheme);
-
+  const [theme, SetTheme] = useState(JSON.parse(localStorage.getItem('theme')));
 
   return (
     <ThemeProvider theme={theme ? theme : LightTheme}>

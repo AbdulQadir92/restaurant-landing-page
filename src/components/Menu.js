@@ -35,7 +35,7 @@ const Menu = () => {
                             <p>{item.description}</p>
                         </CardBody>
                         <ImageContainer>
-                            <img src={`https://localhost:3000/images/menu/${item.image}`} alt="Menu Item" width="200" height="180" />
+                            <img src={`http://localhost:3000/images/menu/${item.image}`} alt="Menu Item" width="200" height="180" />
                         </ImageContainer>
                     </Card>
                 ))}

@@ -39,7 +39,7 @@ const Navbar = ({ setTheme }) => {
                 document.querySelector('#navbar').style.backgroundColor = DarkTheme.nav.bg;
             }
         }
-        // setTheme(JSON.parse(localStorage.getItem('theme')));
+        setTheme(JSON.parse(localStorage.getItem('theme')));
     }
 
     return (
