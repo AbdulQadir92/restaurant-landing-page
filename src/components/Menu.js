@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MenuSection, CardContainer, Card, CardBody, Image } from "../styles/Menu.styled";
+import { MenuSection, CardContainer, Card, CardBody, ImageContainer } from "../styles/Menu.styled";
 
 
 const Menu = () => {
@@ -34,7 +34,9 @@ const Menu = () => {
                             </div>
                             <p>{item.description}</p>
                         </CardBody>
-                        <Image src={`http://localhost:3000/images/menu/${item.image}`} alt="Menu Item" width="200" height="180" />
+                        <ImageContainer>
+                            <img src={`http://localhost:3000/images/menu/${item.image}`} alt="Menu Item" width="200" height="180" />
+                        </ImageContainer>
                     </Card>
                 ))}
             </CardContainer>

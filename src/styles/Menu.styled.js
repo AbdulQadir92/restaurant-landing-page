@@ -25,7 +25,7 @@ export const CardContainer = styled.div`
 
 export const Card = styled.div`
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     border: 1px solid ${({ theme }) => theme.colors.mainBorder};
     background-color: ${({ theme }) => theme.colors.lightBg};
@@ -76,9 +76,14 @@ export const CardBody = styled.div`
     }
 `
 
-export const Image = styled.img`
-    width: 200px;
+export const ImageContainer = styled.div`
+    width: 400px;
     height: 170px;
+
+    & > img {
+        width: 100%;
+        height: 100%;
+    }
 
     @media screen and (max-width: 576px) {
         & {
