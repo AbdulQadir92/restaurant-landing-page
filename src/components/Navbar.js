@@ -47,7 +47,10 @@ const Navbar = ({ setTheme }) => {
             <BrandMenu>
                 <Brand>
                     <h2>
-                        <a href="#">Restaurant</a>
+                        <a href="#">
+                            Restaurant
+                            {/* <img src={`http://localhost:3000/logo.png`} alt="logo" width="20" height="20" /> */}
+                        </a>
                     </h2>
                 </Brand>
                 <MenuIcon>

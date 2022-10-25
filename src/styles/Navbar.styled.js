@@ -43,6 +43,11 @@ export const Brand = styled.div`
         font-weight: bold;
         font-size: 25px;
     }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
 `
 
 export const MenuIcon = styled.div`
