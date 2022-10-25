@@ -78,8 +78,8 @@ const Navbar = ({ setTheme }) => {
                 </li>
             </NavUl>
             <ThemeIcons>
-                {theme.light && <FaMoon id="moon" onClick={() => toggleTheme('DarkTheme')} />}
-                {theme.dark && <FaSun id="sun" onClick={() => toggleTheme('LightTheme')} />}
+                {theme.light && <FaMoon id="moon" title="Dark Mode" onClick={() => toggleTheme('DarkTheme')} />}
+                {theme.dark && <FaSun id="sun" title="Light Mode" onClick={() => toggleTheme('LightTheme')} />}
             </ThemeIcons>
         </StyledNavbar>
     )
