@@ -31,7 +31,7 @@ const SpecialDishes = () => {
                             <p>{item.description}</p>
                         </CardBody>
                         <ImageDiv>
-                            <img src={`http://localhost:3000/images/specialDishes/${item.image}`} alt="Special Dish" width="350" height="300" />
+                            <img src={`https://localhost:3000/images/specialDishes/${item.image}`} alt="Special Dish" width="350" height="300" />
                         </ImageDiv>
                     </Card>
                 ))}

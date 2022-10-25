@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const HomeSection = styled.section`
     position: relative;
 
-    background-image: url('http://localhost:3000/images/home/home-min.jpg');
+    background-image: url('https://localhost:3000/images/home/home-min.jpg');
     background-size: 100% 108%;
     background-position: bottom;
     width: 100%;
